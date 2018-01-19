@@ -54,7 +54,8 @@ class Owner
   end
 
   def sell_pets
-    @pets[:cats, :dogs, :fishes].map { |k, v| v.mood = "nervous" }
+    @pets[:cats, :dogs, :fishes].each { |k, v| }
+    v.each { |animal| animal.mood = "nervous" }
   end
 
 
