@@ -57,6 +57,8 @@ class Owner
     @pets[:cats, :dogs, :fishes].each { |k, v| }
     v.each { |animal| animal.mood = "nervous" }
   end
+  v.clear
+  end
 
 
 
