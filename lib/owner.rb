@@ -58,10 +58,14 @@ class Owner
       value.each do |animal| animal.mood = "nervous"
       end
       value.clear
-    end 
+    end
   end
-  # v.clear
-  # end
+
+  def list_pets
+    @pets.each do |key, value|
+binding.pry
+      puts "I have #{key}:#{value}"
+  end
 
 
 end
