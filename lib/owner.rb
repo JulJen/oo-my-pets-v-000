@@ -4,5 +4,12 @@ class Owner
   attr_reader :species
 
   @@owner =[]
-  
+
+  def initialize
+  end
+
+  def species
+    @species
+  end 
+
 end
