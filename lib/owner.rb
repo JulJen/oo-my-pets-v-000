@@ -9,7 +9,7 @@ class Owner
   def initialize(species)
     @species = species
     @pets = { cats:[], dogs:[], fishes:[] }
-    @@count  += 1
+    
     @@owners << self
   end
 
