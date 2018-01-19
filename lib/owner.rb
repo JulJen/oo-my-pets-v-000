@@ -5,7 +5,7 @@ class Owner
   attr_accessor :name, :pets
   attr_reader :species
 
-  @@all= []
+  @@count = []
   # @@count =  0
 
   def initialize(species)
@@ -20,11 +20,11 @@ class Owner
   end
 
   def self.all
-    @@all.length
+    @@owners.count
   end
 
   def self.reset_all
-    @@all.clear
+    @@owners.clear
   end
 
   def say_species
