@@ -11,7 +11,7 @@ class Owner
   def initialize(species)
     @species = species
     # @name = name
-    @pets = { cats:[], dogs:[], fishes:[] }
+    @pets = { cats: => [], dogs: => [], fishes: => [] }
     @@all << self
   end
 
@@ -57,7 +57,7 @@ class Owner
 
   def sell_pets
     @pets.each do |key, value|
-      value.each {|animal| animal.mood}
+      value.each {|animal| animal.mood = "nervous"}
       end
     end
     @pets.clear
