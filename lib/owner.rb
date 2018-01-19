@@ -9,5 +9,9 @@ class Owner
     @species = species
   end
 
+  def self.all
+    @@owners
+  end 
+
 
 end
