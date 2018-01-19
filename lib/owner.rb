@@ -65,9 +65,7 @@ class Owner
 
   def list_pets
 binding.pry
-  #   @pets.each do |key, value|
-  #
-  #     puts "I have #{key}:#{value}"
+    "I have #{@pets[:fishes]}"
   end
 
 
