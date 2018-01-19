@@ -68,7 +68,7 @@ binding.pry
   #   @pets.each do |key, value|
   #
   #     puts "I have #{key}:#{value}"
-  # end
+  end
 
 
 end
