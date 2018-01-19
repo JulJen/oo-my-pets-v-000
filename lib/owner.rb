@@ -25,9 +25,6 @@ class Owner
     @@owners.clear
   end
 
-  def self.count
-    @@owners.count
-  end
 
 
 end
