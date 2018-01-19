@@ -9,7 +9,7 @@ class Owner
   def initialize(species)
     @species = species
     @pets = { cats:[], dogs:[], fishes:[] }
-    
+
     @@owners << self
   end
 
@@ -54,7 +54,7 @@ class Owner
   end
 
   def sell_pets
-    @pets[:cats, :dogs, :fishes].each { |pets| pets.mood }
+    @pets[:cats, :dogs, :fishes].each.with_index { |k, v| v.mood = "nervous" }
   end
 
 
