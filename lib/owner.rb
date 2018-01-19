@@ -54,7 +54,7 @@ class Owner
   end
 
   def sell_pets
-    @pets[:cats, :dogs, :fishes].each.with_index { |k, v| v.mood = "nervous" }
+    @pets[:cats, :dogs, :fishes].map { |k, v| v.mood = "nervous" }
   end
 
 
