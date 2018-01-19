@@ -2,8 +2,8 @@ require 'pry'
 
 class Owner
   # code goes here
-  attr_accessor :pets, :names
-  attr_reader :species
+  attr_accessor :species
+  attr_reader :pets, :names
 
   @@all = []
   # @@count =  0
@@ -12,19 +12,19 @@ class Owner
     @species = species
     # @name = name
     @pets = { cats:[], dogs:[], fishes:[] }
-    # @@all << self
-  end
-
-  def self.all
-    @@all
+    @@owners << self
   end
 
   def self.count
     @@all.count
   end
 
+  def self.all
+    @@all
+  end
+
   def self.reset_all
-    @@all = []
+    @@all.clear
   end
 
   def say_species
@@ -57,10 +57,10 @@ class Owner
 
   def sell_pets
     @pets.each do |key, value|
-      value.each {|animal| animal.mood = "nervous"}
+      value.each do |animal| animal.mood = "nervous"
       end
+      value.clear
     end
-    @pets.clear
   end
 
   def list_pets
