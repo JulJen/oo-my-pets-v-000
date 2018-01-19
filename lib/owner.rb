@@ -25,6 +25,8 @@ class Owner
     @@owners.clear
   end
 
+  def say_species
+
 
 
 end
