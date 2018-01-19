@@ -60,7 +60,7 @@ class Owner
       value.each {|animal| animal.mood = "nervous"}
       end
     end
-    value.clear
+    @pets.clear
   end
 
   def list_pets
