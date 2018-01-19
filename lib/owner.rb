@@ -5,7 +5,7 @@ class Owner
 
   @@owner =[]
 
-  def initialize(species
+  def initialize(species)
     @species = species
   end
 
